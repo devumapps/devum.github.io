@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Фабрика мобильных приложений</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="files/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) return;
+             js = d.createElement(s); js.id = id;
+             js.src = 'https://connect.facebook.net/ru_RU/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+             fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="226292491502690" logged_in_greeting="Здравствуй! Чем мы можем помочь?"
+        logged_out_greeting="Здравствуй! Чем мы можем помочь?">
+    </div>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>-->
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+                    
+                </div>
+                <!--
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="aboutus.html">About</a></li>
+                                <li><a href="aboutus2.html">About 2</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="contact2.html">Contact us 2</a></li>
+                                <li><a href="404.html">404 error</a></li>
+                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                            </ul>
+                        </li>                    
+                        <li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="blog.html">Blog Default</a></li>
+                                <li><a href="blogtwo.html">Timeline Blog</a></li>
+                                <li><a href="blogone.html">2 Columns + Right Sidebar</a></li>
+                                <li><a href="blogthree.html">1 Column + Left Sidebar</a></li>
+                                <li><a href="blogfour.html">Blog Masonary</a></li>
+                                <li><a href="blogdetails.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="portfolio.html">Portfolio Default</a></li>
+                                <li><a href="portfoliofour.html">Isotope 3 Columns + Right Sidebar</a></li>
+                                <li><a href="portfolioone.html">3 Columns + Right Sidebar</a></li>
+                                <li><a href="portfoliotwo.html">3 Columns + Left Sidebar</a></li>
+                                <li><a href="portfoliothree.html">2 Columns</a></li>
+                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                            </ul>
+                        </li>                         
+                        <li><a href="shortcodes.html ">Shortcodes</a></li>                    
+                    </ul>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+                 -->
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1>Фабрика мобильных приложений</h1>
+                        <p>Фокусируясь на минимальном наборе ключевых функций, мы разрабатывают основу продукта MVP, проверяем гипотезу и затем масштабируем проект</p>
+                        <a href="#services" class="btn btn-common">ДАЛЬШЕ</a>
+                    </div>
+                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
+                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
+                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/icon1.png" alt="">
+                        </div>
+                        <h2>Бюджет</h2>
+                        <p>MVP даёт возможность протестировать гипотезу о продукте с минимальными затратами. И принять решении о стратегии масштабирования.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/home/icon2.png" alt="">
+                        </div>
+                        <h2>Скорость</h2>
+                        <p>Максимально быстрое предоставление продукта, решающего, как минимум, одну проблему, пользователям, и возможность максимально быстро получить нужною информацию от рынка.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/icon3.png" alt="">
+                        </div>
+                        <h2>Ресурсы</h2>
+                        <p>Разработка самая затратная стадия при создании мобильного приложения, MVP позволяет экономить время на разработку. Не делаем ничего лишнего.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Что такое MVP?</h1>
+                            <p>Минимально жизнеспособный продукт, который позволяет протестировать спрос на рынке</p>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->
+    
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/dollar.png" alt="">
+                                </div>
+                        <h2>Модель монетизации</h2>
+                        <p>Один из самых важных моментов при запуске статапа это понимание бизнес модели. Каким способом проект будет приносить деньги. Мы разрабатываем и интегрируем системы монитизации в приложения</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/home/tools.png" alt="">
+                                </div>
+                        <h2>Разработка и запуск</h2>
+                        <p>Для запуска первой версии приложения абсолютно не нужен большой стек технологий. Один из важных аспектов это разработать привлекательный и интуитивно понятный дизайн для мобильного приложения</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/analytics.png" alt="">
+                                </div>
+                        <h2>Работа с аналитикой</h2>
+                        <p>Крайне необходимо интегрировать в продукт системы аналитики моб. приложений. Метрики полученные на ранней стадии формирования продута дадут возможность принимать правильные решения для развития</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/home/image1.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Наше преимущество</h2>
+                        <P>Для многих компаний нужен довольно большой бюджет чтобы протестировать бизнес-идею. Мы можем предложить более простой и экономичный вариант. Разработка минимально жизнеспособного продукта и поитерационное улучшение его, дает возможность минимизировать риски, и предостеречься от длинной цепочки неправильных гипотез. </P>
+                    </div>
+                </div>
+                <!--<div class="single-features">
+                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Built for the Responsive Web</h2>
+                        <P>Mollit eiusmod id chuck turducken laboris meatloaf pork loin tenderloin swine. Pancetta excepteur fugiat strip steak tri-tip. Swine salami eiusmod sint, ex id venison non. Fugiat ea jowl cillum meatloaf.</P>
+                    </div>
+                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/home/image2.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/home/image3.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Experienced and Enthusiastic</h2>
+                        <P>Ut officia cupidatat anim excepteur fugiat cillum ea occaecat rump pork chop tempor. Ut tenderloin veniam commodo. Shankle aliquip short ribs, chicken eiusmod exercitation shank landjaeger spare ribs corned beef.</P>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+     <!--/#features-->
+     
+     <!--/#services-->
+     <section id="services">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-12">
+                     <h2 class="page-header"><center>Что мы делаем</center></h2>
+                 </div>
+                 <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                     <div class="single-service">
+                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                             <div class="icon-wrapper">
+                                 <strong class="fa fa-2x  fa-stack-o">
+                                     1.
+                                 </strong>
+                             </div>
+                         </div>
+                         <br>
+                         <h2>Анализ</h2>
+                         <p>Находим идеи, анализируем рынок, анализируем конкурентов, формируем продуктовые гипотезы</p>
+                     </div>
+                 </div>
+                 <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                     <div class="single-service">
+                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                             <div class="icon-wrapper">
+                                 <strong class="fa fa-2x  fa-stack-o">
+                                     2.
+                                 </strong>
+                             </div>
+                         </div>
+                         <br>
+                         <h2>Разработка</h2>
+                         <p>Выявляем ключевые функции для мобильно приложения. Разрабатываем основу продукта MVP</p>
+                     </div>
+                 </div>
+                 <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                     <div class="single-service">
+                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                             <div class="icon-wrapper">
+                                 <strong class="fa fa-2x  fa-stack-o">
+                                     3.
+                                 </strong>
+                             </div>
+                         </div>
+                         <br>
+                         <h2>Аналитика</h2>
+                         <p>Интегрируем системы аналитики. Собираем бизнес метрики продукта, анализируем полученные данные</p>
+                     </div>
+                 </div>
+                 <div class="col-sm-3 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                     <div class="single-service">
+                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                             <div class="icon-wrapper">
+                                 <strong class="fa fa-2x  fa-stack-o">
+                                     4.
+                                 </strong>
+                             </div>
+                         </div>
+                         <br>
+                         <h2>Масштабирование</h2>
+                         <p>Улучшением продукт. Выявляем скрытые потребности на основании аналитики и формируем стратегию развития</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
+                        <h1 class="title">Наши счастливые партнеры</h1>
+                        <p>Мы разработали, много интересных кейсов, некоторые из них</p>
+                    </div>
+                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!--/#clients-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/home/under.png" class="img-responsive inline" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="contact-info bottom">
+                        <h2>Контакты</h2>
+                        <address>
+                        E-mail: <a href="mailto:mail@devium.app">mail@devium.app</a> <br>
+                        Телефон: +38 (096) 452 0* ** <br>
+                        </address>
+
+                        <h2>Адрес</h2>
+                        <address>
+                        ул. Новокрымская, 5<br>
+                        г. Днепр<br>
+                        Украина<br>
+                        </address>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; 2019 Devium Apps</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>
